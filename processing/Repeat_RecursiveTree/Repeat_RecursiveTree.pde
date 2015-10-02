@@ -9,7 +9,6 @@
  * "Foggy Tree by Chris Coyne:
  * http://www.contextfreeart.org/gallery/view.php?id=4 
  * 
- * This code was written for Processing 2+
  * Get Processing at http://www.processing.org/download
  */
 

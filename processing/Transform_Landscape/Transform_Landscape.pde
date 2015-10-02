@@ -5,7 +5,6 @@
  * Princeton Architectural Press, 2010
  * ISBN 9781568989372
  * 
- * This code was written for Processing 2+
  * Get Processing at http://www.processing.org/download
  */
  
@@ -16,7 +15,6 @@ float angle;
 void setup() {
   size(1024, 768, P3D);
   smooth(4);
-  noFill();
   
   values = new int[width][height];
 
@@ -39,7 +37,7 @@ void draw() {
   scale(4.0);                        // Scale to 400%
   
   // Update the angle
-  angle += 0.005;
+  angle += 0.002;
   rotateY(angle);  
   
   // Display the image mass
@@ -51,9 +49,8 @@ void draw() {
       float z1 = -values[j][i]/2;
       float x2 = j-img.width/2;
       float y2 = i-img.height/2;
-      float z2 = -values[j][i]/2-4;
+      float z2 = -values[j][i]/2 - 10;
       line(x1, y1, z1, x2, y2, z2);
     }
   }
 }
-

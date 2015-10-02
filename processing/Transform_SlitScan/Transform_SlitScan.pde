@@ -5,7 +5,11 @@
  * Princeton Architectural Press, 2010
  * ISBN 9781568989372
  * 
- * This code was written for Processing 2+
+ * This example was updated to work with Processing 3
+ * 
+ * It requires downloading the Video Library, do that by
+ * selecting Import Library from the Sketch menu.
+ * 
  * Get Processing at http://www.processing.org/download
  */
 
@@ -22,8 +26,11 @@ int window_height   = video_height;
 int draw_position_x = 0; 
 boolean newFrame  = false;
 
+void settings() {
+  size(window_width, window_height, P2D); 
+}
+
 void setup() {
-  size(window_width, window_height, P2D);
   myVideo = new Movie(this, "transit.mov");
   background(0);
   myVideo.loop();
